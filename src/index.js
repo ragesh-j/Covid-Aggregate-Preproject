@@ -44,7 +44,7 @@ app.get('/totalDeath', async (req, res) => {
   app.get('/hotspotStates', async (req, res) => {
     const hotspotStates = await connection.aggregate([
       {
-        $addFields: {
+        $addFields: { 
           rate: {
             $round: [
               {
